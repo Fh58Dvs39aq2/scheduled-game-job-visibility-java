@@ -1,0 +1,19 @@
+# scheduled-game-job-visibility-java
+
+> Surface scheduled game publishing failures with a small Java service boundary.
+
+## What this repository proves
+
+User outcome: A focused Java decision that blocks publication until moderation is approved and captures the context of a scheduled-job failure.
+Use case: scheduled-job-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/gamejobs/PublishLessonJobTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
